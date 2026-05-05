@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://www.swiftinvite.co.tz/sitemap.xml
+
+# Block irrelevant paths (add more if needed)
+Disallow: /node_modules/
