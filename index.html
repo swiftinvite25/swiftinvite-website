@@ -195,6 +195,18 @@
       }
     },
     {
+      "@type": "Service",
+      "name": "Loopay",
+      "description": "A digital group-savings platform that helps groups organise savings cycles, contribution updates and member communications.",
+      "provider": {
+        "@id": "https://www.swiftinvite.co.tz/#business"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "Tanzania"
+      }
+    },
+    {
       "@type": "FAQPage",
       "mainEntity": [
         {
@@ -673,6 +685,38 @@ section { padding: 5.5rem 1.5rem; }
 .faq-item.open .faq-answer { display: block; }
 
 /* ══════════════════════════════════════
+  LOOPAY PRODUCT
+══════════════════════════════════════ */
+.loopay-section { background: var(--paper); }
+.loopay-card {
+  max-width: 920px; margin: 0 auto; padding: 3.4rem;
+  display: grid; grid-template-columns: 1.35fr 0.65fr; gap: 2rem;
+  align-items: center; border-radius: 28px; overflow: hidden;
+  background: linear-gradient(135deg, #18243A 0%, #283B5D 100%);
+  color: var(--white); box-shadow: 0 20px 48px rgba(28,11,46,0.15);
+}
+.loopay-kicker {
+  display: inline-flex; margin-bottom: 0.9rem; padding: 0.38rem 0.78rem;
+  border: 1px solid rgba(255,255,255,0.22); border-radius: 999px;
+  color: rgba(255,255,255,0.72); font-size: 0.73rem; font-weight: 700;
+  letter-spacing: 0.1em; text-transform: uppercase;
+}
+.loopay-name { font-size: clamp(2.4rem, 5vw, 3.8rem); font-weight: 700; line-height: 1; letter-spacing: -0.06em; }
+.loopay-name span { color: #8EE6C4; }
+.loopay-card h2 { margin: 0.7rem 0 0.9rem; color: var(--white); font-family: 'Cormorant Garamond', serif; font-size: clamp(1.75rem, 3vw, 2.4rem); line-height: 1.08; }
+.loopay-card p { max-width: 570px; color: rgba(255,255,255,0.72); font-size: 1rem; line-height: 1.75; }
+.loopay-ownership {
+  padding: 1.6rem; border-radius: 20px; text-align: center;
+  background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.15);
+}
+.loopay-ownership small { display: block; color: rgba(255,255,255,0.58); font-size: 0.75rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; }
+.loopay-ownership strong { display: block; margin-top: 0.55rem; color: #8EE6C4; font-size: 1.18rem; line-height: 1.25; }
+@media(max-width:680px) {
+  .loopay-card { grid-template-columns: 1fr; padding: 2.25rem 1.5rem; gap: 1.5rem; }
+  .loopay-ownership { text-align: left; }
+}
+
+/* ══════════════════════════════════════
   CONTACT
 ══════════════════════════════════════ */
 .contact-section { background: var(--white); }
@@ -1136,6 +1180,26 @@ body.lang-switching [data-t] { opacity: 0; }
              data-en="Yes. Invitations are also sent via SMS, so guests without internet access can still receive their invitation. No one misses out on your special event.">Yes. Invitations are also sent via SMS, so guests without internet access can still receive their invitation. No one misses out on your special event.</div>
       </div>
 
+    </div>
+  </div>
+</section>
+
+<!-- ════════════ LOOPAY PRODUCT ════════════ -->
+<section class="loopay-section reveal" id="loopay" aria-label="Loopay by SwiftInvite Digital">
+  <div class="container">
+    <div class="loopay-card">
+      <div>
+        <span class="loopay-kicker" data-t data-sw="Bidhaa ya SwiftInvite Digital" data-en="A product of SwiftInvite Digital">A product of SwiftInvite Digital</span>
+        <div class="loopay-name">Loop<span>ay</span></div>
+        <h2 data-t data-sw="Akiba ya pamoja, kwa urahisi." data-en="Save together. Stay in sync.">Save together. Stay in sync.</h2>
+        <p data-t
+           data-sw="Loopay ni jukwaa la kidigitali linalosaidia vikundi kurahisisha mizunguko ya akiba, taarifa za michango na mawasiliano ya wanachama."
+           data-en="Loopay is a digital group-savings platform that helps groups organise savings cycles, contribution updates and member communication.">Loopay is a digital group-savings platform that helps groups organise savings cycles, contribution updates and member communication.</p>
+      </div>
+      <div class="loopay-ownership">
+        <small data-t data-sw="Imeundwa na kuendeshwa na" data-en="Built and operated by">Built and operated by</small>
+        <strong>SwiftInvite Digital</strong>
+      </div>
     </div>
   </div>
 </section>
